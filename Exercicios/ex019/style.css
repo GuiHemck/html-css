@@ -1,0 +1,39 @@
+
+
+body{
+
+    background-image: linear-gradient(to top,#0a7ee4,#89dfdf );
+    background-attachment: fixed;
+
+}
+
+h1#principal{ 
+
+    text-align: center;
+    color: black;
+}
+
+ h1{
+    color: #0c2338;
+
+ }
+
+ h2{
+    color:  #074663;
+
+ }
+
+ .basico{
+    color: rgb(34, 121, 41)
+
+ }
+
+ .intermediario{
+    color: rgb(124, 124, 38)
+
+ }
+
+ .avancado{
+    color: rgb(117, 34, 34)
+
+ }
