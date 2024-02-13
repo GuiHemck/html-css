@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+        form{
+            background-image: linear-gradient(to bottom, rgba(0, 0, 139, 0.555), rgba(0, 0, 0, 0.63));
+            margin: auto;
+            width: 400px;
+            height: 400px;
+            padding: 10px;
+            border-radius: 6px;
+            
+        }
+        input{
+            border-radius: 4px;
+        }
+        .botao{
+            border-radius: 3px;
+            background-color: black;
+            color: white;
+        }
+        div{
+            margin-bottom: 20px;
+            text-align: justify;
+            font-weight: bold;
+            padding: 10px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>teste de Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <div>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="Inome" required placeholder="nome completo" autocomplete="name">
+        </div>
+        <div>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" min="0" max="10"
+            placeholder="media de 0 a 10" step="0.1" value="5" required>
+        </div>
+        <div>
+            <label for="imes">Períoda Letivo</label>
+            <input type="month" name="mes" id="imes" value="2027/02">
+        </div>
+        <div>
+            <label for="idia">Dia da Prova</label>
+            <input type="date" name="dia" id="idia" value="2024/02/19">
+        </div>
+        <div>
+            <label for="ihora">Horário da Prova</label>
+            <input type="time" name="hora" id="ihora">
+        </div>
+        <input type="submit" value="Enviar" class="botao">
+        <input type="reset" value="Limpar" class="botao">
+    </form>
+</body>
+</html>
