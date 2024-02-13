@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-image: linear-gradient(to bottom, rgb(19, 180, 19), rgba(0, 0, 0, 0.404));
+            background-attachment: fixed;
+            text-align: center;
+        }
+        input{
+            border-radius: 5px;
+        }
+        label{
+            font-weight: bolder;
+        }
+        .botao{
+            background-color: darkgreen;
+            color: white;
+        }
+        main{
+            background-color: aliceblue;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+            margin: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Primeiro Formulário</h1>
+    <main>
+        <form action="cadastro.php" method="post">
+            <p> <!-- relacionar sempre o label com o input usando o id  -->
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail">
+            </p>
+            <input type="submit" value="Enviar" class="botao">
+        
+        </form>
+    </main>
+    
+</body>
+</html>
