@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+*{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        body{
+            background-color: rgba(139, 136, 136, 0.151);
+
+        }
+        h1{
+            
+            text-align: center;
+            background-color: blanchedalmond;
+            width: 400px;
+            margin: justify;
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+
+        div{
+
+            padding: 10px;
+        }
+        form{
+            background-color: lightgray;
+            border-color: blue;
+            border-radius: 15px;
+            font-weight: bolder;
+            max-width: 300px;
+        }
+        input{
+            border-radius: 6px;
+            border-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" target="_blank" method="post" autocomplete="on">
+
+        <div>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor">
+        </div>
+        <div>
+            <label for="inivel"> Nível de satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="0" max="6">
+        </div>
+        <div>
+            <label for="ifoto"> Foto de perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </div>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    
+</body>
+</html>
